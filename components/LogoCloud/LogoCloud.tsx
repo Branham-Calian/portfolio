@@ -140,7 +140,7 @@ export const LogoList = ({ startIndex = 0 }: { startIndex?: number }) => (
 
 export default function LogoCloud() {
   return (
-    <div className="lg:mt-22 relative z-40 mx-auto mb-[-75px] mt-[200px] flex flex-col gap-3 text-white lg:mb-0 lg:max-w-[1080px] lg:gap-6">
+    <div id="skills" className="lg:mt-22 relative z-40 mx-auto mb-[-75px] mt-[200px] flex flex-col gap-3 text-white lg:mb-0 lg:max-w-[1080px] lg:gap-6">
       <SectionHeading
         heading="Signature Skills"
         subheading="A collection of my signature skills and techs in blockchain"

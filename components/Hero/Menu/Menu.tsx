@@ -13,7 +13,6 @@ import TwitterLogo from '../../../public/images/svg/X-Twitter-Logo.svg';
 import YouTubeLogo from '../../../public/images/svg/Youtube-Logo.svg';
 import clsx from 'clsx';
 import Link from 'next/link';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const inActiveStyle = 'text-white/50 hover:bg-white/40 hover:text-white/80';
 const activeStyle = 'bg-gradient-to-b from-white/40 to-[#2F2D2D]/20';
@@ -29,9 +28,9 @@ export default function Menu() {
   const [navMenu, setNavMenu] = useState<NavItem[]>([
     { name: 'Home', href: '/', isActive: true },
     { name: 'About', href: '/#about', isActive: false },
-    { name: 'Videos', href: '/#videos', isActive: false },
+    { name: 'Skills', href: '/#skills', isActive: false },
     { name: 'Projects', href: '/#projects', isActive: false },
-    { name: 'Blog', href: '/posts', isActive: false },
+    { name: 'End', href: '/#end', isActive: false },
   ]);
 
   const setActiveNavItem = (selectedName: string) => {
@@ -49,16 +48,22 @@ export default function Menu() {
         <nav
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
+          style={{
+            position: 'fixed',
+            top: 0,
+            width: '100%',
+            zIndex: 1000,
+          }}
         >
           <div className="flex lg:flex-1">
             <Link className="flex items-center gap-2" href="/">
               <Image
-                src="/images/png/aquawolf-logo.png"
+                src="/images/svg/ant.svg"
                 alt="Logo"
                 width={25}
                 height={25}
               />
-              <div className="text-lg font-semibold text-white">0xAquaWolf</div>
+              <div className="text-lg font-semibold text-white">Benjamin Wilson</div>
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -71,7 +76,12 @@ export default function Menu() {
               <Bars3Icon aria-hidden="true" className="h-10 w-10 text-white" />
             </button>
           </div>
-          <div className="hidden gap-4 rounded-full bg-white/20 px-5 py-2 text-white lg:flex lg:w-full lg:flex-1 lg:items-center lg:gap-x-12">
+          <div className="hidden gap-4 rounded-full bg-white/20 px-5 py-2 text-white lg:flex lg:w-full lg:flex-1 lg:items-center lg:gap-x-12"
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              color: 'black',
+            }}
+          >
             {/* Desktop Mobile menu */}
             {navMenu.map((item) => (
               <span key={item.name} onClick={() => setActiveNavItem(item.name)}>
@@ -90,7 +100,6 @@ export default function Menu() {
             ))}
           </div>
           <div className="hidden gap-4 lg:flex lg:flex-1 lg:justify-end">
-            <ConnectButton />
           </div>
         </nav>
         <Dialog

@@ -27,7 +27,7 @@ export default function ProjectCard({
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <Link  href='' className="h-full">
+    <Link  href='/#projects' className="h-full">
       <div className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900/50 shadow-lg backdrop-blur-sm transition-all hover:shadow-2xl hover:shadow-purple-500/10">
         <div className="relative h-60 w-full overflow-hidden bg-gray-800">
           <Image
