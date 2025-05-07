@@ -105,7 +105,7 @@ GITHUB_ACCESS_TOKEN=""
    ```sh
    docker run -p 3000:3000 portfolio
    ```
-
+Or Execute DockerExecute.bat 
 ## Usage
 
 Gain inspiration for your own portfolio
