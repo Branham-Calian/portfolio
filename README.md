@@ -81,7 +81,7 @@ GITHUB_ACCESS_TOKEN=""
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/0xAquaWolf/portfolio.git
+   git clone https://github.com/Branham-Calian/portfolio.git
    ```
 2. Install packages
    ```sh
@@ -95,6 +95,16 @@ GITHUB_ACCESS_TOKEN=""
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
+### Docker
+
+1. Build
+   ```sh
+   docker build -t portfolio .
+   ```
+2. Run
+   ```sh
+   docker run -p 3000:3000 portfolio
+   ```
 
 ## Usage
 
@@ -229,17 +239,3 @@ Twitter / x - [@0xAquaWolf](https://twitter.com/0xAquaWolf)
 [Bun-url]: https://bun.sh/
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/
-
-## Star History
-
-<a href="https://star-history.com/#0xAquaWolf/portfolio&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=0xAquaWolf/portfolio&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=0xAquaWolf/portfolio&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=0xAquaWolf/portfolio&type=Date" />
- </picture>
-</a>
-
-## Farewell
-
-Wholeness and balanced Vibrations 🙌
